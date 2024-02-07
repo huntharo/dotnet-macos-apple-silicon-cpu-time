@@ -1,11 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 // Initial CPU usage:
 var initialCpuUsageMs = Process.GetCurrentProcess().TotalProcessorTime.TotalMilliseconds;
 Console.WriteLine($"Initial CPU usage: {Process.GetCurrentProcess().TotalProcessorTime}");
 
-// Burn 1 second of CPU time
+// Burn 5 seconds of CPU time
 var sw = Stopwatch.StartNew();
 while (sw.ElapsedMilliseconds < 5000) { }
 
